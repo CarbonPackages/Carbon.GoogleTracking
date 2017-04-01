@@ -1,0 +1,16 @@
+prototype(Page) {
+	head.@process.GoogleTracking = Neos.Fusion:Array {
+		GoogleTagManager = Carbon.GoogleTracking:TagManager.Script
+		GoogleAnalytics = Carbon.GoogleTracking:Analytics
+		GoogleAnalytics = Carbon.GoogleTracking:SiteVerification
+		value = ${value}
+		@position = 'end'
+		@if.integrate = ${Configuration.setting('Carbon.GoogleTracking.AddToPagePrototype')}
+	}
+	body.@process.GoogleTracking = Neos.Fusion:Array {
+		GoogleTagManager = Carbon.GoogleTracking:TagManager.NoScript
+		value = ${value}
+		@position = 'end'
+		@if.integrate = ${Configuration.setting('Carbon.GoogleTracking.AddToPagePrototype')}
+	}
+}

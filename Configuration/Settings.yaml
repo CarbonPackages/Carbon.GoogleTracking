@@ -1,0 +1,15 @@
+Neos:
+  Neos:
+    fusion:
+      autoInclude:
+        'Carbon.GoogleTracking': true
+
+Carbon:
+  GoogleTracking:
+    AddToPagePrototype: false
+    # Including GTM-
+    TagManager:  false
+    # Including UA-
+    Analytics:  false
+    AnalyticsSendPageview: true
+    SiteVerification: false
