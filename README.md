@@ -1,5 +1,8 @@
 Carbon.GoogleTracking Package for Neos CMS
 ==========================================
+[![Latest Stable Version](https://poser.pugx.org/carbon/googletracking/v/stable)](https://packagist.org/packages/carbon/googletracking)
+[![Total Downloads](https://poser.pugx.org/carbon/googletracking/downloads)](https://packagist.org/packages/carbon/googletracking)
+[![License](https://poser.pugx.org/carbon/googletracking/license)](LICENSE)
 
 This package gives you some handy prototypes for including Google Tracking and site verification code. The best practice is to include `carbon/googletracking` into your composer.json from your site package. Now you just can edit your Settings.yaml. Take a look at the [Settings.yaml](Configuration/Settings.yaml) to see all the options. If you want to want an automatic integration, you have to set  `AddToPagePrototype` in your Settings.yaml to `true`.
 
