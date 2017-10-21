@@ -1,14 +1,14 @@
 prototype(Carbon.GoogleTracking:SiteVerification) < prototype(Neos.Fusion:Value) {
-	id = ${Configuration.setting('Carbon.GoogleTracking.SiteVerification')}
-	@context.id = ${this.id}
+    id = ${Configuration.setting('Carbon.GoogleTracking.SiteVerification')}
+    @context.id = ${this.id}
 
-	value = Neos.Fusion:Tag {
-		tagName = 'meta'
-		attributes {
-			name = 'google-site-verification'
-			content = ${id}
-		}
-	}
+    value = Neos.Fusion:Tag {
+        tagName = 'meta'
+        attributes {
+            name = 'google-site-verification'
+            content = ${id}
+        }
+    }
 
-	@if.hasId = ${!String.isBlank(this.id)}
+    @if.hasId = ${!String.isBlank(this.id)}
 }

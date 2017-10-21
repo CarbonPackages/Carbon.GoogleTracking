@@ -1,2 +1,1 @@
-include: Prototypes/**/*.fusion
-include: Integration.fusion
+include: **/*.fusion
