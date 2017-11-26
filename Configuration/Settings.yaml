@@ -11,5 +11,4 @@ Carbon:
     TagManager:  false
     # Including UA-
     Analytics:  false
-    AnalyticsSendPageview: true
     SiteVerification: false
