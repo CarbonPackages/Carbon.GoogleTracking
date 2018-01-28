@@ -3,7 +3,7 @@ prototype(Page) {
         @position = 'after titleTag'
         GoogleTagManager = Carbon.GoogleTracking:TagManager.Script
         GoogleAnalytics = Carbon.GoogleTracking:Analytics
-        GoogleAnalytics = Carbon.GoogleTracking:SiteVerification
+        SiteVerification = Carbon.GoogleTracking:SiteVerification
         @if.integrate = ${Configuration.setting('Carbon.GoogleTracking.AddToPagePrototype')}
     }
 
