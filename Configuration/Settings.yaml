@@ -11,4 +11,8 @@ Carbon:
     TagManager:  false
     # Including UA-
     Analytics:  false
+    AnalyticsSettings:
+      anonymize_ip: true
+      # If you don't want gtag.js to send the pageview to Google Analytics, set the send_page_view parameter to false:
+      # send_page_view: false
     SiteVerification: false

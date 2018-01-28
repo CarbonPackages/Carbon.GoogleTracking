@@ -1,9 +1,17 @@
 prototype(Carbon.GoogleTracking:Analytics) < prototype(Neos.Fusion:Array) {
     id = ${Configuration.setting('Carbon.GoogleTracking.Analytics')}
-    @ignoreProperties = ${['id']}
+    settings = ${Configuration.setting('Carbon.GoogleTracking.AnalyticsSettings')}
+    settings.@process {
+        collection = Neos.Fusion:RawCollection {
+            collection = ${value}
+            itemRenderer = ${'"' + itemKey + '":' + (Type.isString(item) ? '"' +  item + '"' : item ? 'true' : 'false')}
+        }
+        stringify = ${Array.length(value) ? ',{' + Array.join(value,',') + '}' : ''}
+    }
+    @ignoreProperties = ${['id', 'settings']}
 
     externalScript = ${'<script async src="https://www.googletagmanager.com/gtag/js?id=' + this.id + '"></script>'}
-    callScript = ${'<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config", "' + this.id + '");</script>'}
+    callScript = ${'<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","' + this.id + this.settings + '");</script>'}
 
     @if {
         hasId = ${!String.isBlank(this.id)}
