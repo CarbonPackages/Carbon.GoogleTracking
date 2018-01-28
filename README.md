@@ -1,8 +1,14 @@
-Carbon.GoogleTracking Package for Neos CMS
-==========================================
 [![Latest Stable Version](https://poser.pugx.org/carbon/googletracking/v/stable)](https://packagist.org/packages/carbon/googletracking)
 [![Total Downloads](https://poser.pugx.org/carbon/googletracking/downloads)](https://packagist.org/packages/carbon/googletracking)
 [![License](https://poser.pugx.org/carbon/googletracking/license)](LICENSE)
+[![GitHub forks](https://img.shields.io/github/forks/jonnitto/Carbon.GoogleTracking.svg?style=social&label=Fork)](https://github.com/jonnitto/Carbon.GoogleTracking/fork)
+[![GitHub stars](https://img.shields.io/github/stars/jonnitto/Carbon.GoogleTracking.svg?style=social&label=Stars)](https://github.com/jonnitto/Carbon.GoogleTracking/stargazers)
+[![GitHub watchers](https://img.shields.io/github/watchers/jonnitto/Carbon.GoogleTracking.svg?style=social&label=Watch)](https://github.com/jonnitto/Carbon.GoogleTracking/subscription)
+[![GitHub followers](https://img.shields.io/github/followers/jonnitto.svg?style=social&label=Follow)](https://github.com/jonnitto/followers)
+[![Follow Jon on Twitter](https://img.shields.io/twitter/follow/jonnitto.svg?style=social&label=Follow)](https://twitter.com/jonnitto)
+
+Carbon.GoogleTracking Package for Neos CMS
+==========================================
 
 This package gives you some handy prototypes for including Google Tracking and site verification code. The best practice is to include `carbon/googletracking` into your composer.json from your site package. Now you just can edit your Settings.yaml. Take a look at the [Settings.yaml](Configuration/Settings.yaml) to see all the options. If you want to want an automatic integration, you have to set  `AddToPagePrototype` in your Settings.yaml to `true`.
 
