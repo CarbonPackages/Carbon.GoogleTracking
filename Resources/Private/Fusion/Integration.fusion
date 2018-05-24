@@ -1,4 +1,4 @@
-prototype(Page) {
+prototype(Neos.Neos:Page) {
     head.GoogleTracking = Neos.Fusion:Array {
         @position = 'after titleTag'
         GoogleTagManager = Carbon.GoogleTracking:TagManager.Script
